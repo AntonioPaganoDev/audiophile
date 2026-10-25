@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #D87D4A;
+  --color-primary-light: #FBAF85;
+  --color-ink: #101010;
+  --color-black: #000000;
+  --color-gray-100: #F1F1F1;
+  --color-gray-50: #FAFAFA;
+  --color-white: #FFFFFF;
+  --font-sans: "Manrope", sans-serif;
+}
+
+* {
+  letter-spacing: 2px;
+}
+
+@utility page-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 1.5rem;
+
+  @media (min-width: 1024px) {
+    padding-inline: 10rem;
+  }
+}
