@@ -2,7 +2,7 @@
   <TheHero />
 
   <div class="page-container mt-40 mb-10 sm:mb-40">
-    <div class="flex flex-col sm:flex-row justify-between w-full gap-30">
+    <div class="flex flex-col sm:flex-row justify-between w-full gap-x-10 gap-y-30">
       <TheThumbnails
         v-for="product in products"
         :key="product.id"

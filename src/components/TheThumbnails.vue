@@ -2,8 +2,8 @@
   <div
     class="bg-gray-100 w-87.5 h-52 rounded-lg flex flex-col items-center justify-center relative"
   >
-    <div class="absolute -top-20">
-      <img :src="image" :alt="alt" class="w-56" />
+    <div class="absolute -top-14">
+      <img :src="image" :alt="alt" class="w-42" />
     </div>
     <div class="text-center mt-16">
       <p class="text-lg font-bold uppercase">{{ alt }}</p>

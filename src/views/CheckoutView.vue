@@ -11,14 +11,18 @@
         </button>
       </div>
 
-      <form class="flex justify-between w-full pb-10 gap-10" novalidate @submit.prevent="submit">
-        <div class="bg-white w-8/12 p-10 rounded-lg space-y-14">
+      <form
+        class="flex flex-col xl:flex-row justify-between w-full pb-10 gap-10"
+        novalidate
+        @submit.prevent="submit"
+      >
+        <div class="bg-white xl:w-8/12 p-10 rounded-lg space-y-14">
           <div class="text-3xl font-bold uppercase">checkout</div>
 
           <div>
             <div class="text-primary uppercase mb-4">billing details</div>
             <div class="grid grid-cols-12 gap-4">
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.name"
                   label="Nome"
@@ -29,7 +33,7 @@
                 />
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.email"
                   type="email"
@@ -41,7 +45,7 @@
                 />
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.phone"
                   type="tel"
@@ -68,7 +72,7 @@
                 />
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.zip"
                   label="ZIP Code"
@@ -79,7 +83,7 @@
                 />
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.city"
                   label="City"
@@ -90,7 +94,7 @@
                 />
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.country"
                   label="Country"
@@ -106,11 +110,11 @@
           <div>
             <div class="text-primary uppercase mb-4">payment details</div>
             <div class="grid grid-cols-12 gap-4">
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <div class="text-sm font-bold mb-2">Payment Method</div>
               </div>
 
-              <div class="col-span-6">
+              <div class="col-span-12 sm:col-span-6">
                 <TheInputs
                   v-model="form.paymentMethod"
                   type="radio"
@@ -121,7 +125,7 @@
                 />
               </div>
 
-              <div class="col-span-6 mt-2" v-if="form.paymentMethod === 'emoney'">
+              <div class="col-span-12 sm:col-span-6 mt-2" v-if="form.paymentMethod === 'emoney'">
                 <TheInputs
                   v-model="form.eMoneyNumber"
                   label="e-Money Number"
@@ -132,7 +136,7 @@
                 />
               </div>
 
-              <div class="col-span-6 mt-2" v-if="form.paymentMethod === 'emoney'">
+              <div class="col-span-12 sm:col-span-6 mt-2" v-if="form.paymentMethod === 'emoney'">
                 <TheInputs
                   v-model="form.eMoneyPIN"
                   type="password"
@@ -147,7 +151,7 @@
           </div>
         </div>
 
-        <div class="bg-white w-4/12 p-10 rounded-lg">
+        <div class="bg-white xl:w-4/12 p-10 rounded-lg h-fit">
           <div class="text-lg font-bold uppercase">summary</div>
           <div class="space-y-4 mt-8">
             <div

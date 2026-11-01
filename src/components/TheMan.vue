@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col xl:flex-row gap-10 mt-40">
     <div class="w-full order-2 xl:order-1 xl:w-3/4 my-auto text-center xl:text-left">
-      <div class="text-3xl md:text-[40px] font-bold uppercase leading-none mb-10">
+      <div class="text-3xl sm:text-[40px] font-bold uppercase leading-none mb-10">
         Bringing you the <span class="text-primary">best</span> audio gear
       </div>
 

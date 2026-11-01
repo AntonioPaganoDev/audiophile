@@ -22,6 +22,6 @@
   padding-inline: 1.5rem;
 
   @media (min-width: 1024px) {
-    padding-inline: 10rem;
+    padding-inline: 8rem;
   }
 }

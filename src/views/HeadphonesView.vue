@@ -1,112 +1,161 @@
 <template>
-  <div class="mb-40 mt-20">
-    <div class="text-[40px] font-bold uppercase leading-none text-center mb-24 bg-black py-26">
+  <div class="my-20">
+    <div
+      class="text-3xl sm:text-[40px] font-bold uppercase leading-none text-center mb-24 bg-ink py-26"
+    >
       <span class="text-white">headphones</span>
     </div>
 
-    <div class="page-container flex justify-between w-full gap-30 mb-20">
-      <div class="w-full">
-        <img
-          src="@/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
-          alt="XX99 Mark II Headphones"
-          class="mx-auto rounded-lg"
-        />
-      </div>
+    <div class="page-container">
+      <div class="flex flex-col lg:flex-row justify-between w-full gap-x-30 gap-y-10 mb-20">
+        <div class="w-full">
+          <img
+            src="@/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+            alt="XX99 Mark II Headphones"
+            class="mx-auto rounded-lg sm:hidden"
+          />
 
-      <div class="w-full">
-        <div class="flex flex-col justify-center h-full space-y-8">
-          <div class="text-sm uppercase opacity-50 text-primary">new product</div>
-          <div class="text-[40px] font-bold uppercase leading-none w-1/2">
-            xx99 mark ii headphones
-          </div>
+          <img
+            src="@/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
+            alt="XX99 Mark II Headphones"
+            class="mx-auto rounded-lg hidden sm:block lg:hidden"
+          />
 
-          <div class="opacity-50">
-            The new xx99 Mark II headphones is the pinnacle of pristine audio. It redefines your
-            premium headphone experience by reproducing the balanced depth and precision of studio-
-            quality sound.
-          </div>
-
-          <TheButton
-            variant="primary"
-            class="w-fit"
-            @click="redirect('/product/xx99-mark-ii-headphones')"
-          >
-            See product
-          </TheButton>
+          <img
+            src="@/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+            alt="XX99 Mark II Headphones"
+            class="mx-auto rounded-lg hidden lg:block"
+          />
         </div>
-      </div>
-    </div>
 
-    <div class="page-container flex justify-between w-full gap-30 mb-20">
-      <div class="w-full">
-        <div class="flex flex-col justify-center h-full space-y-8">
-          <div class="text-[40px] font-bold uppercase leading-none w-1/2">
-            xx99 mark i headphones
+        <div class="text-center lg:text-start w-full">
+          <div class="flex flex-col justify-center h-full space-y-8">
+            <div class="text-sm uppercase opacity-50 text-primary">new product</div>
+            <div class="text-3xl sm:text-[40px] font-bold uppercase leading-none">
+              xx99 mark ii headphones
+            </div>
+
+            <div class="opacity-50">
+              The new xx99 Mark II headphones is the pinnacle of pristine audio. It redefines your
+              premium headphone experience by reproducing the balanced depth and precision of
+              studio- quality sound.
+            </div>
+
+            <div>
+              <TheButton
+                variant="primary"
+                class="w-fit"
+                @click="redirect('/product/xx99-mark-ii-headphones')"
+              >
+                See product
+              </TheButton>
+            </div>
           </div>
-
-          <div class="opacity-50">
-            As the gold standard for headphones, the classic xx99 Mark I offers detailed and
-            accurate audio reproduction for audiophiles, mixing engineers, and music aficionados
-            alike in studios and on the go.
-          </div>
-
-          <TheButton
-            variant="primary"
-            class="w-fit"
-            @click="redirect('/product/xx99-mark-i-headphones')"
-          >
-            See product
-          </TheButton>
         </div>
       </div>
 
-      <div class="w-full">
-        <img
-          src="@/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
-          alt="XX99 Mark I Headphones"
-          class="mx-auto rounded-lg"
-        />
-      </div>
-    </div>
+      <div class="flex flex-col lg:flex-row justify-between w-full gap-x-30 gap-y-10 mb-20">
+        <div class="text-center lg:text-start w-full order-2 lg:order-1">
+          <div class="flex flex-col justify-center h-full space-y-8">
+            <div class="text-3xl sm:text-[40px] font-bold uppercase leading-none">
+              xx99 mark i headphones
+            </div>
 
-    <div class="page-container flex justify-between w-full gap-30 mb-40">
-      <div class="w-full">
-        <img
-          src="@/assets/product-xx59-headphones/desktop/image-product.jpg"
-          alt="XX59 Headphones"
-          class="mx-auto rounded-lg"
-        />
-      </div>
+            <div class="opacity-50">
+              As the gold standard for headphones, the classic xx99 Mark I offers detailed and
+              accurate audio reproduction for audiophiles, mixing engineers, and music aficionados
+              alike in studios and on the go.
+            </div>
 
-      <div class="w-full">
-        <div class="flex flex-col justify-center h-full space-y-8">
-          <div class="text-[40px] font-bold uppercase leading-none w-1/2">xx59 headphones</div>
-
-          <div class="opacity-50">
-            Enjoy your audio almost anywhere and customize it to your specific tastes with the xx59
-            headphones. The stylish yet durable versatile wireless headset is a brilliant companion
-            at home or on the move.
+            <div>
+              <TheButton
+                variant="primary"
+                class="w-fit"
+                @click="redirect('/product/xx99-mark-i-headphones')"
+              >
+                See product
+              </TheButton>
+            </div>
           </div>
+        </div>
 
-          <TheButton variant="primary" class="w-fit" @click="redirect('/product/xx59-headphones')">
-            See product
-          </TheButton>
+        <div class="w-full order-1 lg:order-2">
+          <img
+            src="@/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg"
+            alt="XX99 Mark I Headphones"
+            class="mx-auto rounded-lg sm:hidden"
+          />
+
+          <img
+            src="@/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg"
+            alt="XX99 Mark I Headphones"
+            class="mx-auto rounded-lg hidden sm:block lg:hidden"
+          />
+
+          <img
+            src="@/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+            alt="XX99 Mark I Headphones"
+            class="mx-auto rounded-lg hidden lg:block"
+          />
         </div>
       </div>
-    </div>
 
-    <div class="page-container flex justify-between w-full gap-30 mb-20">
-      <TheThumbnails
-        v-for="product in products"
-        :key="product.id"
-        :image="product.image"
-        :alt="product.name"
-        :to="product.to"
-        class="w-full"
-      />
-    </div>
+      <div class="flex flex-col lg:flex-row justify-between w-full gap-x-30 gap-y-10 mb-40">
+        <div class="w-full">
+          <img
+            src="@/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg"
+            class="mx-auto rounded-lg sm:hidden"
+          />
 
-    <TheMan />
+          <img
+            src="@/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg"
+            class="mx-auto rounded-lg hidden sm:block lg:hidden"
+          />
+
+          <img
+            src="@/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+            class="mx-auto rounded-lg hidden lg:block"
+          />
+        </div>
+
+        <div class="text-center lg:text-start w-full">
+          <div class="flex flex-col justify-center h-full space-y-8">
+            <div class="text-3xl sm:text-[40px] font-bold uppercase leading-none">
+              xx59 headphones
+            </div>
+
+            <div class="opacity-50">
+              Enjoy your audio almost anywhere and customize it to your specific tastes with the
+              xx59 headphones. The stylish yet durable versatile wireless headset is a brilliant
+              companion at home or on the move.
+            </div>
+
+            <div>
+              <TheButton
+                variant="primary"
+                class="w-fit"
+                @click="redirect('/product/xx59-headphones')"
+              >
+                See product
+              </TheButton>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between w-full gap-30 mb-40">
+        <TheThumbnails
+          v-for="product in products"
+          :key="product.id"
+          :image="product.image"
+          :alt="product.name"
+          :to="product.to"
+          class="w-full"
+        />
+      </div>
+
+      <TheMan />
+    </div>
   </div>
 </template>
 

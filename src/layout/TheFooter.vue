@@ -1,6 +1,6 @@
 <template>
   <footer class="py-10 bg-ink text-white space-y-10">
-    <div class="page-container">
+    <div class="page-container space-y-10">
       <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-0 sm:gap-10">
         <div class="flex justify-center sm:justify-start">
           <img src="@/assets/shared/desktop/logo.svg" alt="Audiophile Logo" />

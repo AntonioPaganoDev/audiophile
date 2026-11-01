@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-40 mt-20">
-    <div class="page-container py-10">
+  <div class="my-20 page-container">
+    <div class="py-10">
       <button
         type="button"
         @click="router.back()"
@@ -11,12 +11,12 @@
     </div>
 
     <div>
-      <div class="page-container flex justify-between w-full gap-30 mb-20">
+      <div class="flex flex-col md:flex-row justify-between w-full gap-x-30 gap-y-10 mb-20">
         <div class="w-full">
           <img
             :src="products[route.params.id].image"
-            alt="XX99 Mark II Headphones"
-            class="mx-auto rounded-lg"
+            :alt="products[route.params.id].name"
+            class="rounded-lg w-96 mx-auto md:mx-0"
           />
         </div>
 
@@ -28,7 +28,7 @@
             >
               new product
             </div>
-            <div class="text-[40px] font-bold uppercase leading-none w-1/2">
+            <div class="text-3xl sm:text-[40px] font-bold uppercase leading-none">
               {{ products[route.params.id].name }}
             </div>
 
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <div class="page-container flex justify-between w-full gap-30 mb-40">
+      <div class="flex flex-col lg:flex-row justify-between w-full gap-x-30 gap-y-10 mb-40">
         <div class="w-full">
           <div class="text-3xl font-bold uppercase mb-8">features</div>
           <div class="opacity-50">
@@ -87,34 +87,36 @@
       </div>
     </div>
 
-    <div class="page-container flex justify-between mb-40">
-      <div>
+    <div class="flex flex-col md:flex-row justify-between mb-40 gap-x-6">
+      <div class="flex flex-col justify-between">
         <div v-for="value in products[route.params.id].gallery.slice(0, 2)" :key="value">
-          <img :src="value" class="mb-8 rounded-lg" />
+          <img :src="value" class="rounded-lg w-full mb-6 md:mb-0" />
         </div>
       </div>
 
       <div>
-        <img :src="products[route.params.id].gallery[2]" class="mb-8 rounded-lg" />
+        <img :src="products[route.params.id].gallery[2]" class="rounded-lg w-full" />
       </div>
     </div>
 
-    <div class="page-container mb-80">
-      <div class="text-3xl font-bold text-center mb-8">You may also like</div>
-      <div class="flex justify-between w-full gap-10">
+    <div class="mb-60">
+      <div class="text-3xl font-bold text-center mb-8 uppercase">you may also like</div>
+      <div class="flex flex-col md:flex-row justify-between w-full gap-10">
         <div
           v-for="product in randomProductsBesidesCurrent()"
           :key="product.id"
-          class="flex flex-col items-center gap-8 w-full"
+          class="flex flex-col items-center gap-6 w-full"
         >
-          <img :src="product.image" class="w-full rounded-lg h-full" />
-          <div class="text-2xl font-bold uppercase">{{ product.name }}</div>
+          <img :src="product.image" class="rounded-lg w-full h-60 lg:h-full object-cover" />
+          <div class="text-2xl font-bold uppercase md:h-24 2xl:h-auto text-center">
+            {{ product.name }}
+          </div>
           <TheButton variant="primary" @click="redirect(product.key)">see product </TheButton>
         </div>
       </div>
     </div>
 
-    <div class="page-container flex justify-between w-full gap-30 mb-40">
+    <div class="flex flex-col sm:flex-row justify-between w-full gap-x-10 gap-y-30 mb-40">
       <TheThumbnails
         v-for="product in products_category"
         :key="product.id"

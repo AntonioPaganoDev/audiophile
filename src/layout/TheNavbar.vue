@@ -1,5 +1,5 @@
 <template>
-  <nav class="h-20 bg-black text-white z-10 fixed left-0 right-0 top-0">
+  <nav class="h-20 bg-ink text-white z-10 fixed left-0 right-0 top-0">
     <div class="mx-auto flex h-full page-container items-center justify-between">
       <div class="flex items-center gap-6">
         <!-- Hamburger (solo sotto lg) -->
@@ -69,7 +69,9 @@
             class="absolute -top-2 -right-2 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs cursor-pointer"
             >{{ cart.items.length }}</span
           >
-          <img src="@/assets/shared/desktop/icon-cart.svg" alt="Cart" class="cursor-pointer w-12" />
+          <div class="w-6">
+            <img src="@/assets/shared/desktop/icon-cart.svg" alt="Cart" class="cursor-pointer" />
+          </div>
         </div>
       </div>
     </div>
@@ -107,7 +109,7 @@
       <button
         v-else-if="auth.isAuthenticated"
         @click="handleLogout"
-        class="hover:text-primary cursor-pointer"
+        class="hover:text-primary uppercase cursor-pointer"
       >
         logout
       </button>

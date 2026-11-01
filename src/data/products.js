@@ -1,37 +1,37 @@
 // src/data/products.js
 
 // XX99 Mark II
-import xx99mark2 from '@/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg'
+import xx99mark2 from '@/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg'
 import xx99mark2Gallery1 from '@/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg'
 import xx99mark2Gallery2 from '@/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg'
 import xx99mark2Gallery3 from '@/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg'
 
 // XX99 Mark I
-import xx99mark1 from '@/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg'
+import xx99mark1 from '@/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg'
 import xx99mark1Gallery1 from '@/assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg'
 import xx99mark1Gallery2 from '@/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg'
 import xx99mark1Gallery3 from '@/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg'
 
 // XX59
-import xx59 from '@/assets/product-xx59-headphones/desktop/image-product.jpg'
+import xx59 from '@/assets/product-xx59-headphones/tablet/image-product.jpg'
 import xx59Gallery1 from '@/assets/product-xx59-headphones/desktop/image-gallery-1.jpg'
 import xx59Gallery2 from '@/assets/product-xx59-headphones/desktop/image-gallery-2.jpg'
 import xx59Gallery3 from '@/assets/product-xx59-headphones/desktop/image-gallery-3.jpg'
 
 // ZX9
-import zx9 from '@/assets/product-zx9-speaker/desktop/image-product.jpg'
+import zx9 from '@/assets/product-zx9-speaker/tablet/image-product.jpg'
 import zx9Gallery1 from '@/assets/product-zx9-speaker/desktop/image-gallery-1.jpg'
 import zx9Gallery2 from '@/assets/product-zx9-speaker/desktop/image-gallery-2.jpg'
 import zx9Gallery3 from '@/assets/product-zx9-speaker/desktop/image-gallery-3.jpg'
 
 // ZX7
-import zx7 from '@/assets/product-zx7-speaker/desktop/image-product.jpg'
+import zx7 from '@/assets/product-zx7-speaker/tablet/image-product.jpg'
 import zx7Gallery1 from '@/assets/product-zx7-speaker/desktop/image-gallery-1.jpg'
 import zx7Gallery2 from '@/assets/product-zx7-speaker/desktop/image-gallery-2.jpg'
 import zx7Gallery3 from '@/assets/product-zx7-speaker/desktop/image-gallery-3.jpg'
 
 // YX1
-import yx1 from '@/assets/product-yx1-earphones/desktop/image-product.jpg'
+import yx1 from '@/assets/product-yx1-earphones/tablet/image-product.jpg'
 import yx1Gallery1 from '@/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'
 import yx1Gallery2 from '@/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'
 import yx1Gallery3 from '@/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'
