@@ -54,7 +54,6 @@ const sizeClasses = {
 </script>
 <!--
   UTILIZZO:
-
   <TheButton variant="primary">See product</TheButton>
   <TheButton variant="outline">See product</TheButton>
   <TheButton variant="link">Shop</TheButton>
